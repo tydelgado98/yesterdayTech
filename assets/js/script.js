@@ -6,5 +6,10 @@
 // tr tw ua us ve za. Note: you can't mix this param with the sources param.
 
 // GET https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ef1373e5392446349319b79d71c36c49
+
+// GET https://newsapi.org/v2/top-headlines?country=us&apiKey=ef1373e5392446349319b79d71c36c49
+
+// GET https://newsapi.org/v2/top-headlines?q=trump&apiKey=ef1373e5392446349319b79d71c36c49  Headline with Trump in it
+
 // that is the api call for the bbc news and its using my actual api key
 
