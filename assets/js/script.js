@@ -15,3 +15,5 @@
 
 // that is the api call for the bbc news and its using my actual api key
 
+let title = document.getElementById("title");
+
