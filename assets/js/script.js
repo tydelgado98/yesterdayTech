@@ -17,6 +17,3 @@
 
 let title = document.getElementById("title");
 
-let formSubmit = function (event) {
-    event.preventDefault();
-
