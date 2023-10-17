@@ -20,8 +20,10 @@ let category = document.getElementById("category");
 
 let formSubmit = function (event) {
     event.preventDefault();
+    let categoryName = category.value;
 
    
-    console.log(category);
+    console.log(categoryName);
+    
 }
 
