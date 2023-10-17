@@ -1,7 +1,16 @@
-
-
 let title = document.getElementById("title");
 let category = document.getElementById("category");
+let categoryForm = document.getElementById("category-form");
+
+
+
+
+
+
+
+
+
+
 
 let formSubmit = function (event) {
     event.preventDefault();
