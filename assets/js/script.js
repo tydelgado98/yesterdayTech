@@ -1,6 +1,6 @@
 let title = document.getElementById("title");
 let category = document.getElementById("category");
-let categoryForm = document.getElementById("category-form");
+let categoryForm = document.getElementById("Category-form");
 
 
 
@@ -24,6 +24,8 @@ let formSubmit = function (event) {
 
 
 
+
+categoryForm.addEventListener("submit", formSubmit);
 
 
 
