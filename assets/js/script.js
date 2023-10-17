@@ -14,12 +14,8 @@ let categoryForm = document.getElementById("Category-form");
 
 let formSubmit = function (event) {
     event.preventDefault();
-
-    let categoryName = category.option.value;
-
-   
+    let categoryName = category.value;
     console.log(categoryName);
-
 }
 
 
