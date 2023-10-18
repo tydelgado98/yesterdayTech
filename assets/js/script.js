@@ -25,7 +25,10 @@ let formSubmit = function (event) {
     }
 };
 
-let getCategoryWeather = function (categoryName) {
+let getCategoryWeather = function (category) {
+
+    let queryURL = "https://newsapi.org/v2/top-headlines?category=" + category + "&apiKey=" + APIKey;
+    
 
 
 
