@@ -28,12 +28,14 @@ let formSubmit = function (event) {
 let getCategoryWeather = function (category) {
 
     let queryURL = "https://newsapi.org/v2/top-headlines?category=" + category + "&apiKey=" + APIKey;
-fetch(queryURL)
-        .then(function (res){
-            if (res.ok) {
-                console.log(res);
-                res.json().then(function (data) {
-                    console.log(data);
+    fetch(queryURL)
+    .then(function (res){
+        if (res.ok) {
+            console.log(res);
+            res.json().then(function (data) {
+                console.log(data);
+            });
+            
 };
 
 
