@@ -17,7 +17,15 @@ let formSubmit = function (event) {
     event.preventDefault();
     let categoryName = category.value;
     console.log(categoryName);
-}
+
+    if (categoryName) {
+        getCategoryWeather(categoryName);
+    } else {
+        alert("Please enter a category");
+    }
+};
+
+let getCategoryWeather = function (categoryName) {
 
 
 
