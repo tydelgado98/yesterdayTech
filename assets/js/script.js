@@ -35,7 +35,11 @@ let getCategoryWeather = function (category) {
             res.json().then(function (data) {
                 console.log(data);
             });
-            
+        } else {
+            alert("Error: " + res.statusText);
+        }
+    }
+    )
 };
 
 
