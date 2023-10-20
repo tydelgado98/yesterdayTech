@@ -49,7 +49,7 @@ let displayCategory = function (data, searchTerm) {
     for (let i = 0; i < data.articles.length; i++) {
         categorySearch.innerHTML += `
         <div >
-        
+        <h5> ${data.articles[i].title}</h5>
 
 
 
