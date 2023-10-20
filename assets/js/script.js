@@ -46,6 +46,11 @@ let getCategoryWeather = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
+    for (let i = 0; i < data.articles.length; i++) {
+        categorySearch.innerHTML += `
+        <div >
+        
+
 
 
 
