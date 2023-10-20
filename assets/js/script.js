@@ -43,8 +43,9 @@ let getCategoryWeather = function (category) {
             alert("Error: " + res.statusText);
         }
     }
-    )
-};
+    )};
+
+let displayCategory = function (data, searchTerm) {
 
 
 
