@@ -35,7 +35,7 @@ let getCategoryWeather = function (category) {
             console.log(res);
             res.json().then(function (data) {
                 console.log(data);
-
+                categorySearch.innerHTML = "";
 
 
 
