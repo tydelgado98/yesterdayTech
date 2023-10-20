@@ -35,7 +35,7 @@ let getCategoryWeather = function (category) {
             console.log(res);
             res.json().then(function (data) {
                 console.log(data);
-                category = category.toUpperCase();
+                category = category.charAt(0).toUpperCase() + category.slice(1)
                 categorySearch.innerHTML = `<h2>${category}</h2>`;
 
 
