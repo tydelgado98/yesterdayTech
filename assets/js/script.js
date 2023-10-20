@@ -10,10 +10,6 @@ let APIKey = "ef1373e5392446349319b79d71c36c49";
 
 
 
-
-
-
-
 let formSubmit = function (event) {
     event.preventDefault();
     let categoryName = category.value;
@@ -46,7 +42,7 @@ let getCategory = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
-    for (let i = 0; i < data.articles.length; i++) {
+    for (let i = 0; i < Math.min(data.articles.length, 5); i++) {
         categorySearch.innerHTML += `
         <div >
         <h5> ${data.articles[i].title}</h5>`
