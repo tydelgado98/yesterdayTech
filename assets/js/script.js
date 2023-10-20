@@ -44,16 +44,15 @@ let getCategory = function (category) {
 let displayCategory = function (data, searchTerm) {
     for (let i = 0; i < Math.min(data.articles.length, 5); i++) {
 
-        let linkk = document.createElement("a");
-        linkk.href = data.articles[i].url;
-        linkk.textContent = data.articles[i].title;
-
-
-        categorySearch.innerHTML += `
-        <div >
-        <h5> ${linkk}</h5>
-        <div/>
-        `
+        const articleLink = document.createElement("a");
+        articleLink.href = data.articles[i].url; // Set the URL for the link
+        articleLink.textContent = data.articles[i].title; // Set the link text
+    
+        // Create a <div> to contain the link
+        const articleDiv = document.createElement("div");
+        articleDiv.appendChild(articleLink);
+    
+        categorySearch.appendChild(articleDiv); // Add the lin
     }
 }
 
