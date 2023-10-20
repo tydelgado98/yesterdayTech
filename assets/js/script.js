@@ -49,10 +49,6 @@ let displayCategory = function (data, searchTerm) {
     }
 }
 
-
-
-
-
 categoryForm.addEventListener("submit", formSubmit);
 
 
