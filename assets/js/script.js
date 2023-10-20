@@ -28,7 +28,7 @@ let formSubmit = function (event) {
 
 let getCategoryWeather = function (category) {
 
-    let queryURL = "https://newsapi.org/v2/top-headlines?category=" + category + "&apiKey=" + APIKey;
+    let queryURL = "https://newsapi.org/v2/top-headlines?country=us&category=" + category + "&apiKey=" + APIKey;
     fetch(queryURL)
     .then(function (res){
         if (res.ok) {
