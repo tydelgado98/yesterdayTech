@@ -47,12 +47,10 @@ let displayCategory = function (data, searchTerm) {
         const articleLink = document.createElement("a");
         articleLink.href = data.articles[i].url; // Set the URL for the link
         articleLink.textContent = data.articles[i].title; // Set the link text
+
+       
     
-        // Create a <div> to contain the link
-        const articleDiv = document.createElement("div");
-        articleDiv.appendChild(articleLink);
-    
-        categorySearch.appendChild(articleDiv); // Add the lin
+        categorySearch.appendChild(articleLink); // Add the lin
     }
 }
 
