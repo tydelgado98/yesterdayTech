@@ -37,10 +37,7 @@ let getCategoryWeather = function (category) {
                 console.log(data);
                 category = category.charAt(0).toUpperCase() + category.slice(1)
                 categorySearch.innerHTML = `<h2>${category}</h2>`;
-
-
-
-
+                displayCategory(data, category);
             });
         } else {
             alert("Error: " + res.statusText);
