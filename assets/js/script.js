@@ -24,7 +24,7 @@ let formSubmit = function (event) {
 
 let getCategory = function (category) {
 
-    let queryURL = "https://newsapi.org/v2/top-headlines?country=us&per_page=5&category=" + category + "&apiKey=" + APIKey;
+    let queryURL = "https://newsapi.org/v2/top-headlines?country=us&category=" + category + "&apiKey=" + APIKey;
     fetch(queryURL)
     .then(function (res){
         if (res.ok) {
