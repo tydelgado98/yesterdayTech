@@ -1,7 +1,7 @@
 let title = document.getElementById("title");
 let category = document.getElementById("category");
 let categoryForm = document.getElementById("Category-form");
-let categorySearch = document.getElementById("category-search");
+let categorySearch = document.getElementById("newsSection");
 
 let APIKey = "ef1373e5392446349319b79d71c36c49";
 
