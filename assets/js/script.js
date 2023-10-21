@@ -45,7 +45,7 @@ let displayCategory = function (data, searchTerm) {
     for (let i = 0; i < Math.min(data.articles.length, 3); i++) {
 
        articleTitle = document.createElement("a");
-        
+        articleTitle.href = data.articles[i].url;
         articleTitle.textContent = data.articles[i].title;
         articleTitle.setAttribute("class", "mt-4")
 
