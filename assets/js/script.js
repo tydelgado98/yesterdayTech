@@ -49,15 +49,16 @@ let displayCategory = function (data, searchTerm) {
         articleTitle.textContent = data.articles[i].title;
 
 
+        
+
 
 
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleTitle);
+        articleContainer.appendChild(articleDesc);
         articleTitle.setAttribute("class", "mt-4")
-        let articleDesc = document.createElement("p");
-        articleDesc.textContent = data.articles[i].description;
-        articleDesc.setAttribute("class", "mt-2")
-        articleTitle.append(articleDesc);
+       
+        articleTitle.append(articleContainer);
 
        
     
