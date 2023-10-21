@@ -51,7 +51,8 @@ let displayCategory = function (data, searchTerm) {
 
 
 
-        let articleDesc = document.createElement("p");
+        let articleContainer = document.createElement("div");
+        articleContainer.appendChild(articleTitle);
         articleTitle.setAttribute("class", "mt-4")
         let articleDesc = document.createElement("p");
         articleDesc.textContent = data.articles[i].description;
