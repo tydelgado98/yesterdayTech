@@ -44,12 +44,14 @@ let getCategory = function (category) {
 let displayCategory = function (data, searchTerm) {
     for (let i = 0; i < Math.min(data.articles.length, 5); i++) {
 
-        const articleLink = document.createElement("a");
+        const articleLink = document.createElement("h3");
         articleLink.href = data.articles[i].url; // Set the URL for the link
         articleLink.textContent = data.articles[i].title; // Set the link text
         articleLink.setAttribute("class", "mt-4")
         let articleDesc = document.createElement("p");
-        
+        articleDesc.textContent = data.articles[i].description;
+        articleLink.append(articleDesc);
+
        
     
        categorySearch.append(articleLink); // Append the link to the DOM
