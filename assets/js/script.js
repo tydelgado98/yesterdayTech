@@ -47,6 +47,11 @@ let displayCategory = function (data, searchTerm) {
         const articleLink = document.createElement("h3");
         articleLink.href = data.articles[i].url; // Set the URL for the link
         articleLink.textContent = data.articles[i].title; // Set the link text
+        articleTitle = data.articles[i].title;
+        
+
+
+
         articleLink.setAttribute("class", "mt-4")
         let articleDesc = document.createElement("p");
         articleDesc.textContent = data.articles[i].description;
