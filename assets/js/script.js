@@ -47,22 +47,24 @@ let displayCategory = function (data, searchTerm) {
        articleTitle = document.createElement("a");
         articleTitle.href = data.articles[i].url;
         articleTitle.textContent = data.articles[i].title;
+        articleTitle.setAttribute("class", "mt-4")
 
-
-        
+        let articleDesc = document.createElement("p");
+        articleDesc.textContent = data.articles[i].description;
+        articleDesc.setAttribute("class", "mt-2")
 
 
 
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleTitle);
         articleContainer.appendChild(articleDesc);
-        articleTitle.setAttribute("class", "mt-4")
+      
        
-        articleTitle.append(articleContainer);
+      
 
        
     
-       categorySearch.append(articleTitle); // Append the link to the DOM
+       categorySearch.append(articleContainer); // Append the link to the DOM
     }
 }
 
