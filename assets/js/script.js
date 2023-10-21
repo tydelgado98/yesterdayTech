@@ -42,16 +42,16 @@ let getCategory = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
-    for (let i = 0; i < Math.min(data.articles.length, 5); i++) {
+    for (let i = 0; i < Math.min(data.articles.length, 3); i++) {
 
        articleTitle = document.createElement("a");
-        articleTitle.href = data.articles[i].url;
+        
         articleTitle.textContent = data.articles[i].title;
         articleTitle.setAttribute("class", "mt-4")
 
-        let articleDesc = document.createElement("p");
+        let articleDesc = document.createElement("h6");
         articleDesc.textContent = data.articles[i].description;
-        articleDesc.setAttribute("class", "mt-2")
+        articleDesc.setAttribute("class", "mb-5 mt-2")
 
 
 
