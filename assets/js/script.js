@@ -49,7 +49,8 @@ let displayCategory = function (data, searchTerm) {
     let articleTitle = document.createElement("a");
         articleTitle.textContent = data.articles[i].title;
         articleTitle.setAttribute("class", "mt-4")
-        articleTitle.setAttribute("href", './news.html?url=' + data.articles[i].url);
+        articleTitle.setAttribute("href", './news.html?url=' + data.articles[i]);
+        console.log(articleTitle)
 
         let articleDesc = document.createElement("h6");
         articleDesc.textContent = data.articles[i].description;
