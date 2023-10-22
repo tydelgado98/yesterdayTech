@@ -46,12 +46,12 @@ let displayCategory = function (data, searchTerm) {
 
     //    articleTitle = document.createElement("a");
     //     articleTitle.href = data.articles[i].url;
-   let articleTitle = document.createElement("a");
-articleTitle.textContent = data.articles[i].title;
-articleTitle.setAttribute("class", "mt-4");
-// Encode the article data as JSON and add it to the URL as a query parameter
-articleTitle.setAttribute("href", `./news.html?url=${encodeURIComponent(JSON.stringify(data.articles[i]))}`);
-
+    let articleTitle = document.createElement("a");
+    articleTitle.textContent = data.articles[i].title;
+    articleTitle.setAttribute("class", "mt-4");
+    // Encode the article data as JSON and add it to the URL as a query parameter
+    articleTitle.setAttribute("href", `./news.html?url=${encodeURIComponent(JSON.stringify(data.articles[i]))}`);
+    
        
         
 
