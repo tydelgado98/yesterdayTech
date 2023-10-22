@@ -19,6 +19,10 @@ console.log(articleData);
   let articleContent = document.createElement("a");
   articleContent.textContent = articleData.content;
   articleContent.setAttribute("href", articleData.url);
+  articleContent.style.color = "#333333"; 
+  articleContent.style.fontStyle = "italic";
+  articleContent.style.fontSize = "1.0rem";
+articleContent.style.textDecoration = "none"; 
 
 
 
