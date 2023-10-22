@@ -50,7 +50,8 @@ let displayCategory = function (data, searchTerm) {
         articleTitle.textContent = data.articles[i].title;
         articleTitle.setAttribute("class", "mt-4")
         articleTitle.setAttribute("href", './news.html?url=' + data.articles[i]);
-        console.log(articleTitle)
+        document
+        
 
         let articleDesc = document.createElement("h6");
         articleDesc.textContent = data.articles[i].description;
@@ -61,6 +62,7 @@ let displayCategory = function (data, searchTerm) {
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleTitle);
         articleContainer.appendChild(articleDesc);
+        
 
        
       
