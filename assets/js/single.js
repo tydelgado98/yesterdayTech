@@ -4,6 +4,9 @@ let articleContainer = document.getElementById("article-container");
 let articleData = JSON.parse(decodeURIComponent(new URLSearchParams(window.location.search).get("url")));
 
 if (articleData) {
+
+console.log(articleData);
+
   articleContainer.innerHTML = "";
   let articleTitle = document.createElement("h3");
   articleTitle.textContent = articleData.title;
@@ -11,8 +14,9 @@ if (articleData) {
 
   let articleDescription = document.createElement("p");
   articleDescription.textContent = articleData.description;
+  articleDescription.setAttribute("class", "mb-5 mt-3")
 
-  let articleContent = document.createElement("p");
+  let articleContent = document.createElement("h6");
   articleContent.textContent = articleData.content;
 
   articleContainer.appendChild(articleTitle);
