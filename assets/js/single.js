@@ -7,6 +7,7 @@ if (articleData) {
   articleContainer.innerHTML = "";
   let articleTitle = document.createElement("h3");
   articleTitle.textContent = articleData.title;
+  articleTitle.setAttribute("class", "mt-4");
 
   let articleDescription = document.createElement("p");
   articleDescription.textContent = articleData.description;
