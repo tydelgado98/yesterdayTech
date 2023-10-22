@@ -16,8 +16,11 @@ console.log(articleData);
   articleDescription.textContent = articleData.description;
   articleDescription.setAttribute("class", "mb-5 mt-3")
 
-  let articleContent = document.createElement("h6");
+  let articleContent = document.createElement("a");
   articleContent.textContent = articleData.content;
+  articleContent.setAttribute("href", articleData.url);
+
+
 
   articleContainer.appendChild(articleTitle);
   articleContainer.appendChild(articleDescription);
@@ -25,5 +28,7 @@ console.log(articleData);
 } else {
   articleContainer.textContent = "No article data found.";
 }
+
+
 
 
