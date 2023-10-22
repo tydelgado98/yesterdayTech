@@ -42,12 +42,14 @@ let getCategory = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
-    for (let i = 0; i < Math.min(data.articles.length, 3); i++) {
+    for (let i = 0; i < Math.min(data.articles.length, 4); i++) {
 
-       articleTitle = document.createElement("a");
-        articleTitle.href = data.articles[i].url;
+    //    articleTitle = document.createElement("a");
+    //     articleTitle.href = data.articles[i].url;
+    let articleTitle = document.createElement("a");
         articleTitle.textContent = data.articles[i].title;
         articleTitle.setAttribute("class", "mt-4")
+        articleTitle.setAttribute("href", './news.html?url=' + data.articles[i].url);
 
         let articleDesc = document.createElement("h6");
         articleDesc.textContent = data.articles[i].description;
@@ -58,6 +60,8 @@ let displayCategory = function (data, searchTerm) {
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleTitle);
         articleContainer.appendChild(articleDesc);
+
+       
       
        
       
