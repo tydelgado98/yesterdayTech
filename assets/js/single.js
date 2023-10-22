@@ -1,13 +1,11 @@
 let newEl = document.getElementById("newsSection");
 let articleContainer = document.getElementById("article-container");
 
-
-
-
-const articleData = JSON.parse(decodeURIComponent(new URLSearchParams(window.location.search).get("url")));
+let articleData = JSON.parse(decodeURIComponent(new URLSearchParams(window.location.search).get("url")));
 
 if (articleData) {
-  let articleTitle = document.createElement("h2");
+  articleContainer.innerHTML = "";
+  let articleTitle = document.createElement("h3");
   articleTitle.textContent = articleData.title;
 
   let articleDescription = document.createElement("p");
