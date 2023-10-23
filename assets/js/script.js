@@ -56,6 +56,7 @@ let displayCategory = function (data, searchTerm) {
     articleTitle.setAttribute("class", "mb-4 mt-3");
     // Encode the article data as JSON and add it to the URL as a query parameter
     articleTitle.setAttribute("href", `./news.html?url=${encodeURIComponent(JSON.stringify(data.articles[i]))}`);
+    articleTitle.style.textDecoration = "none";
     
        
         
@@ -70,7 +71,8 @@ let displayCategory = function (data, searchTerm) {
         articleContainer.appendChild(articleAuthor);
 
         articleContainer.appendChild(articleTitle);
-        articleContainer.setAttribute("class", "mb-4 mt-2");
+        articleContainer.setAttribute("class", "mb-4 mt-2 p-4 border border-dark rounded");
+        
         // articleContainer.appendChild(articleDesc);
         
 
