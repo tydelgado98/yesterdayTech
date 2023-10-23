@@ -15,11 +15,13 @@ console.log(articleData);
   let articleTitle = document.createElement("h2");
   articleTitle.textContent = articleData.title;
   articleTitle.setAttribute("class", "mt-3");
+  articleTitle.setAttribute("class", "mb-4 mt-2 border-bottom border-dark rounded");
+  articleTitle.style.paddingBottom = "4rem";
 
   let articleDescription = document.createElement("h5");
   articleDescription.textContent = articleData.description;
   articleDescription.setAttribute("class", "mb-4")
-  articleDescription.style.marginTop = "5.0rem";
+  articleDescription.style.marginTop = "3.0rem";
 
   let articleContent = document.createElement("a");
   articleContent.textContent = articleData.content;
