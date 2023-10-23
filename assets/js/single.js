@@ -21,7 +21,7 @@ console.log(articleData);
   let articleDescription = document.createElement("h5");
   articleDescription.textContent = articleData.description;
   articleDescription.setAttribute("class", "mb-4")
-  articleDescription.style.marginTop = "3.0rem";
+  articleDescription.style.marginTop = "4.0rem";
 
   let articleContent = document.createElement("a");
   articleContent.textContent = articleData.content;

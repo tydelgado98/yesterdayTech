@@ -2,6 +2,7 @@ let title = document.getElementById("title");
 let category = document.getElementById("category");
 let categoryForm = document.getElementById("Category-form");
 let categorySearch = document.getElementById("newsSection");
+let footer = document.getElementById("foot");
 
 let APIKey = "ef1373e5392446349319b79d71c36c49";
 
@@ -33,6 +34,7 @@ let getCategory = function (category) {
                 console.log(data);
                 category = category.charAt(0).toUpperCase() + category.slice(1)
                 categorySearch.innerHTML = `<h2>${category}</h2>`;
+                footer.style.position = "relative";
                 displayCategory(data, category);
             });
         } else {
@@ -49,7 +51,7 @@ let displayCategory = function (data, searchTerm) {
         let articleAuthor = document.createElement("h6");
         articleAuthor.textContent = data.articles[i].author;
         articleAuthor.setAttribute("class", "mb-2 mt-2");
-
+        articleAuthor.style.fontStyle = "italic"
 
     let articleTitle = document.createElement("a");
     articleTitle.textContent = data.articles[i].title;
@@ -57,6 +59,7 @@ let displayCategory = function (data, searchTerm) {
     // Encode the article data as JSON and add it to the URL as a query parameter
     articleTitle.setAttribute("href", `./news.html?url=${encodeURIComponent(JSON.stringify(data.articles[i]))}`);
     articleTitle.style.textDecoration = "none";
+    
     
        
         
@@ -69,9 +72,10 @@ let displayCategory = function (data, searchTerm) {
 
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleAuthor);
-
         articleContainer.appendChild(articleTitle);
-        articleContainer.setAttribute("class", "mb-4 mt-2 p-4 border border-dark rounded");
+        articleContainer.setAttribute("class", "mb-4 mt-5 p-4 border border-dark rounded");
+        articleContainer.style.padding = "4.0rem";
+        articleContainer.style.marginTop = "10.0rem";
         
         // articleContainer.appendChild(articleDesc);
         
