@@ -44,7 +44,7 @@ let getCategory = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
-    for (let i = 0; i < Math.min(data.articles.length, 4); i++) {
+    for (let i = 0; i < Math.min(data.articles.length, 8); i++) {
 
     //    articleTitle = document.createElement("a");
     //     articleTitle.href = data.articles[i].url;
@@ -73,9 +73,10 @@ let displayCategory = function (data, searchTerm) {
         let articleContainer = document.createElement("div");
         articleContainer.appendChild(articleAuthor);
         articleContainer.appendChild(articleTitle);
-        articleContainer.setAttribute("class", "mb-4 mt-5 p-4 border border-dark rounded");
+        articleContainer.setAttribute("class", "mb-5 mt-5 border border-dark rounded");
         articleContainer.style.padding = "4.0rem";
-        articleContainer.style.marginTop = "10.0rem";
+        articleContainer.style.paddingTop = "1.5rem";
+        
         
         // articleContainer.appendChild(articleDesc);
         
