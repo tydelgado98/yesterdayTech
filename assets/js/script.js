@@ -46,33 +46,35 @@ let displayCategory = function (data, searchTerm) {
 
     //    articleTitle = document.createElement("a");
     //     articleTitle.href = data.articles[i].url;
+        let articleAuthor = document.createElement("h6");
+        articleAuthor.textContent = data.articles[i].author;
+        articleAuthor.setAttribute("class", "mb-2 mt-2");
+
+
     let articleTitle = document.createElement("a");
     articleTitle.textContent = data.articles[i].title;
-    articleTitle.setAttribute("class", "mt-4");
+    articleTitle.setAttribute("class", "mb-4 mt-3");
     // Encode the article data as JSON and add it to the URL as a query parameter
     articleTitle.setAttribute("href", `./news.html?url=${encodeURIComponent(JSON.stringify(data.articles[i]))}`);
     
        
         
 
-        let articleDesc = document.createElement("h6");
-        articleDesc.textContent = data.articles[i].description;
-        articleDesc.setAttribute("class", "mb-5 mt-2")
+        // let articleDesc = document.createElement("h6");
+        // articleDesc.textContent = data.articles[i].description;
+        // articleDesc.setAttribute("class", "mb-5 mt-2")
 
 
 
         let articleContainer = document.createElement("div");
+        articleContainer.appendChild(articleAuthor);
+
         articleContainer.appendChild(articleTitle);
-        articleContainer.appendChild(articleDesc);
+        articleContainer.setAttribute("class", "mb-3 mt-2");
+        // articleContainer.appendChild(articleDesc);
         
 
        
-      
-       
-      
-
-       
-    
        categorySearch.append(articleContainer); // Append the link to the DOM
     }
 }
