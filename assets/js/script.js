@@ -53,6 +53,11 @@ let displayCategory = function (data, searchTerm) {
         articleAuthor.setAttribute("class", "mb-2 mt-2");
         articleAuthor.style.fontStyle = "italic"
 
+        let articleSource = document.createElement("h4");
+        articleSource.textContent = data.articles[i].source.name;
+        articleSource.setAttribute("class", "mb-5");
+        articleSource.style.fontStyle = "italic"
+
     let articleTitle = document.createElement("a");
     articleTitle.textContent = data.articles[i].title;
     articleTitle.setAttribute("class", "mb-4 mt-3");
@@ -71,8 +76,10 @@ let displayCategory = function (data, searchTerm) {
 
 
         let articleContainer = document.createElement("div");
+        articleContainer.appendChild(articleSource);
         articleContainer.appendChild(articleAuthor);
         articleContainer.appendChild(articleTitle);
+      
         articleContainer.setAttribute("class", "mb-5 mt-5 border border-dark rounded");
         articleContainer.style.padding = "4.0rem";
         articleContainer.style.paddingTop = "1.5rem";
