@@ -70,7 +70,7 @@ let displayCategory = function (data, searchTerm) {
         articleContainer.appendChild(articleAuthor);
 
         articleContainer.appendChild(articleTitle);
-        articleContainer.setAttribute("class", "mb-3 mt-2");
+        articleContainer.setAttribute("class", "mb-4 mt-2");
         // articleContainer.appendChild(articleDesc);
         
 
