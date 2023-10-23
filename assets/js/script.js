@@ -44,7 +44,7 @@ let getCategory = function (category) {
     )};
 
 let displayCategory = function (data, searchTerm) {
-    for (let i = 0; i < Math.min(data.articles.length, 8); i++) {
+    for (let i = 0; i < Math.min(data.articles.length, 6); i++) {
 
     //    articleTitle = document.createElement("a");
     //     articleTitle.href = data.articles[i].url;
