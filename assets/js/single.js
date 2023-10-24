@@ -3,6 +3,7 @@ let articleContainer = document.getElementById("article-container");
 let articleData = JSON.parse(decodeURIComponent(new URLSearchParams(window.location.search).get("url")));
 let footer = document.getElementById("foot");
 let lefty = document.getElementById("leftSection");
+let title = document.getElementById("title");
 
 
 
@@ -10,7 +11,8 @@ let lefty = document.getElementById("leftSection");
 
 if (articleData) {
 
-
+  title.style.color = "#333333";
+  title.style.fontStyle = "italic";
 
   lefty.style.display = "none";
 footer.style.position = "relative";
