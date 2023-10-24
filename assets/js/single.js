@@ -57,7 +57,7 @@ console.log(articleData);
   articleContainer.appendChild(articleDescription);
   articleContainer.appendChild(articleContent);
   articleContainer.appendChild(articleImg);
-  articleContainer.style = "width: 80%; margin: 4rem auto 2rem; border: 1px solid #555555; border-radius: 0.5rem; background-color: #f5f5f5; box-shadow: 0 0 10px #555555;";
+  articleContainer.style = "width: 70%;; margin: 4rem auto 2rem; padding: 1.3rem; border: 1px solid #555555; border-radius: 0.5rem; background-color: #f5f5f5; box-shadow: 0 0 10px #555555;";
  
 } else {
   articleContainer.textContent = "No article data found.";
