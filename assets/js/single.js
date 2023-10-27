@@ -49,18 +49,21 @@ console.log(articleData);
   articleContent.style.textDecoration = "none";
 
   let articleImg = document.createElement("img");
-  articleImg.setAttribute("href", articleData.url);
-  
   articleImg.setAttribute("src", articleData.urlToImage);
   articleImg.style = "width: 60%; display: block; margin: 4rem auto 2rem;";
   
+
+  let imageLink = document.createElement("a");
+imageLink.setAttribute("href", articleData.url);
+imageLink.setAttribute("target", "_blank"); // Open the link in a new tab/window
+imageLink.appendChild(articleImg);
 
 
   articleContainer.appendChild(articleAuthor);
   articleContainer.appendChild(articleTitle);
   articleContainer.appendChild(articleDescription);
   articleContainer.appendChild(articleContent);
-  articleContainer.appendChild(articleImg);
+  articleContainer.appendChild(imageLink);
   articleContainer.style = "width: 70%;; margin: 4rem auto 2rem; padding: 1.3rem; border: 1px solid #555555; border-radius: 0.5rem; background-color: #f5f5f5; box-shadow: 0 0 10px #555555;";
  
 } else {
