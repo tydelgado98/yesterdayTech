@@ -40,10 +40,9 @@ console.log(articleData);
   articleDescription.style.marginTop = "4.0rem";
 
 
-  let articleContent = document.createElement("a");
+  let articleContent = document.createElement("h7");
   articleContent.textContent = articleData.content;
-  articleContent.setAttribute("href", articleData.url);
-  articleContent.style.color = "#555555"; 
+  // articleContent.style.color = "#555555"; 
   articleContent.style.fontStyle = "italic";
   articleContent.style.fontSize = "0.8rem";
   articleContent.style.textDecoration = "none";
