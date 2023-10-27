@@ -49,6 +49,8 @@ console.log(articleData);
   articleContent.style.textDecoration = "none";
 
   let articleImg = document.createElement("img");
+  articleImg.setAttribute("href", articleData.url);
+  
   articleImg.setAttribute("src", articleData.urlToImage);
   articleImg.style = "width: 60%; display: block; margin: 4rem auto 2rem;";
   
