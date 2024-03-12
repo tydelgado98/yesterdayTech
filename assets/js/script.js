@@ -39,6 +39,7 @@ let getCategory = function (category) {
             });
         } else {
             alert("Error: " + res.statusText);
+            console.log(res.statusText);
         }
     }
     )};
